@@ -1,0 +1,57 @@
+body {
+  background-color: transparent;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  margin: 200px;
+  background-color: black;
+  position: relative;
+}
+.box::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 160%;
+  width: 130%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-280deg);
+  background-image: conic-gradient(
+    #ff08bb 0deg,
+    #ff00bb 90deg,
+    transparent 130deg,
+    transparent 130deg,
+    transparent 180deg,
+    #4530ff 180deg,
+    #4530ff 270deg,
+    transparent 310deg,
+    transparent 360deg
+  );
+  transition: transform 2s;
+}
+. @keyframes box1 {
+  0% {
+    border-color: red;
+
+    /* transform: translate(30px 35px);
+    border:solid aqua; */
+  }
+  25% {
+    border-color: rgb(75, 43, 48);
+  }
+  50% {
+    border-color: rgb(124, 36, 207);
+  }
+  75% {
+    border-color: rgb(196, 117, 28);
+  }
+
+  100% {
+    border-color: rgb(161, 71, 86);
+
+    /* transform:translate(30px 40px);
+    border:solid rgb(29, 31, 30); */
+  }
+}
