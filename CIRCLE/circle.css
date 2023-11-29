@@ -18,5 +18,35 @@ body {
   align-items: center;
 }
 
-.box.circle {
+.circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: -30px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  border-top: 4px solid #24ecff;
+  /* box-shadow: 0 0 0 5px #24ecff33; */
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: #24ecff;
+  box-shadow: 0 0 0 5px #24ecff33, 0 0 0 20px #24ecff22, 0 0 0 20px #24ecff11,
+    0 0 0 20px #24ecff, 0 0 0 50px #24ecff;
+}
+
+/* .circle:nth-child(3) {
+  position: absolute;
+  top: -70px;
+} */
+.circle:nth-child(3) {
+  position: absolute;
+  top: 66.66px;
 }
