@@ -1,11 +1,38 @@
 * {
   padding: 0;
   margin: 0;
+  /* box-sizing: border-box; */
+  /* font-family:Arial ; */
 }
 body {
   position: relative;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  /* box-sizing: border-box; */
+  align-items: center;
+  background-color: rgb(64, 60, 102);
 }
 h2 {
   position: absolute;
-  text
+  font-size: 6em;
+  color: #60447a;
+  letter-spacing: 7px;
+  text-align: center;
+  width: 100%;
+  /* background-color: antiquewhite; */
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, rgba(58, 34, 77, 0.533));
+  line-height: 4rem;
+  outline: none;
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0% {
+    color: aliceblue;
+  }
+
+  100% {
+    color: aliceblue;
+  }
 }
